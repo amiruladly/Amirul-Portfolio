@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Amirul Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="script.js"></script>
+    
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <h2 class="animated-portfolio-title">Portfolio.</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services/Skill</a></li>
+            <li><a href="#projects">Project/Work</a></li>
+            <li><a href="#achievements">Achievements/Awards Received</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero fade-in-up" id="home">
+        <div class="hero-text">
+            <p></p>
+            <h1>Welcome to My Portfolio</h1>
+            <h1>Hi, I'm <span>Amirul Adly</span></h1>
+            <p>I'm a passionate Industrial Automation student at University Malaysia Pahang Al-Sultan Abdullah. I'm dedicated to learning and applying the latest technologies in robotics, programming, and automation systems.</p>
+            <p>This portfolio showcases my work, from web applications to real-world industrial automation projects. Take a look at my projects, and feel free to connect with me!</p>       
+        </div>
+        <div class="hero-image">
+            <img src="Image/WhatsApp_Image_2025-03-27_at_12.14.08_611d6770.jpg" alt="Profile Picture">
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about fade-in-up" id="about" >
+        <img src="Image/WhatsApp_Image_2025-03-27_at_13.28.26_97c38145.jpg" alt="About Me">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>I am a dedicated and driven university student currently pursuing a degree in Industrial Automation at University Malaysia Pahang Al-Sultan Abdullah. My academic journey has allowed me to develop a strong foundation in electronic technology, automation systems, and data analysis. I am passionate about hands-on learning and have been involved in various projects, ranging from developing web applications to working with industrial production lines and collaborative robotics.</p>
+            <p>Throughout my studies, I have gained practical experience in areas such as programming, sensor integration, circuit design, and system automation. I am always eager to explore new technologies and improve my skills through real-world applications and collaborative projects. I am also committed to enhancing my technical and soft skills to prepare myself for a career in the ever-evolving field of industrial automation.</p>   
+            <p>In addition to my coursework, I actively participate in various training programs and workshops to expand my knowledge base, including short courses on collaborative robotics, electrical wiring, and more. My goal is to continue growing as an engineer and contribute to innovative solutions in the field of automation. </p>    
+            <div>
+                    <div class="dropdown" onclick="toggleDropdown('education')">Education</div>
+                    <div id="education" class="dropdown-content">
+                        <p>> Sijil Vokasional Malaysia at Kolej Vokasional Sungai Buloh</p>
+                        <p>> Diploma in Electronic Technology at Kolej Vokasional Sungai Buloh</p>
+                        <p>> Malaysia Skills Certificate Level Three at Kolej Vokasional Sungai Buloh</p>
+                        <p>> Bachelor of Technology in Industrial Automation - Current, University Malaysia Pahang Al-Sultan Abdullah</p>       
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill and Section -->
+    <section class="services animated-section fade-in-up" id="services">
+        <h2>Service/Skill Offered</h2>
+        <div class="skills-container">
+            <!-- Skills Box 1 -->
+            <div class="skills-box">
+                <img src="Image/fluidsim.jpg" alt="FluidSim">
+                <div class="skills-info">
+                    <h3>FluidSim Festo</h3>
+                    <p>Design Pneumatic and Electro-pneumatic circuits</p>
+                </div>
+            </div>
+
+            <!-- Skills Box 2 -->
+            <div class="skills-box">
+                <img src="Image/Arduino_IDE_logo.svg.png" alt="Arduino">
+                <div class="skills-info">
+                    <h3>Arduino</h3>
+                    <p>Microcontroller projects using Arduino</p>
+                </div>
+            </div>
+
+            <!-- Skills Box 3 -->
+            <div class="skills-box">
+                <img src="Image/pyhton.png" alt="Python Programming">
+                <div class="skills-info">
+                    <h3>Python Programming</h3>
+                    <p>Develop web apps using Python & Streamlit</p>
+                </div>
+            </div>
+
+            <!-- Skills Box 4 -->
+            <div class="skills-box">
+                <img src="Image/multisim.jpg" alt="NI Multisim">
+                <div class="skills-info">
+                    <h3>NI Multisim</h3>
+                    <p>Electronic circuit design implementing a logic gate</p>
+                </div>
+            </div>
+
+            <!-- Skills Box 5 -->
+            <div class="skills-box">
+                <img src="Image/eplan.png" alt="Eplan">
+                <div class="skills-info">
+                    <h3>Eplan Electric P8</h3>
+                    <p>Draw electrical 2D and 3D CAD drawings.</p>
+                </div>
+            </div>
+
+            <!-- Skills Box 6 -->
+            <div class="skills-box">
+                <img src="Image/tia_portal.jpg" alt="TIA-Portal">
+                <div class="skills-info">
+                    <h3>TIA-Portal</h3>
+                    <p>Ability to create Siemens PLC ladder programming language</p>
+                </div>
+            </div>
+
+            <!-- Skills Box 7 -->
+            <div class="skills-box">
+                <img src="Image/C_Programming_Language.svg.png" alt="C Programming">
+                <div class="skills-info">
+                    <h3>C Programming</h3>
+                    <p>Data collection with Arduino and Serial Communication</p>
+                </div>
+            </div>
+
+            <!-- Skills Box 8 -->
+            <div class="skills-box">
+                <img src="Image/designer.jpg" alt="CX-Designer">
+                <div class="skills-info">
+                    <h3>CX-Designer</h3>
+                    <p>Execute an Omron PLC Graphical User Interface</p>
+                </div>
+            </div>
+
+            <!-- Skills Box 9 -->
+            <div class="skills-box">
+                <img src="Image/android_studio.png" alt="Android Studio">
+                <div class="skills-info">
+                    <h3>Android Studio</h3>
+                    <p>Java and AI-assisted mobile app development</p>
+                </div>
+            </div>
+
+            <!-- Skills Box 10 -->
+            <div class="skills-box">
+                <img src="Image/autocad.png" alt="AutoCAD">
+                <div class="skills-info">
+                    <h3>AutoCAD</h3>
+                    <p>Draw an electrical schematic in 2D CAD.</p>
+                </div>
+            </div>
+
+            <!-- Skills Box 11 -->
+            <div class="skills-box">
+                <img src="Image/logo-plx_daq.png" alt="PLX-DAQ">
+                <div class="skills-info">
+                    <h3>PLX-DAQ</h3>
+                    <p>Log data from Arduino into an Excel CSV file via serial communication.</p>
+                </div>
+            </div>
+
+            <!-- Skills Box 12 -->
+            <div class="skills-box">
+                <img src="Image/cx-programmer_v9.1_prod.jpg" alt="CX-Programmer">
+                <div class="skills-info">
+                    <h3>CX-Programmer</h3>
+                    <p>Execute an Omron PLC Ladder Programming Language</p>
+                </div>
+            </div>
+        </div> <!-- skills-container -->
+    </section>
+
+    <!-- Project Section -->
+    <section class="projects animated-section fade-in-up" id="projects">
+        <h2>Past Projects & Work Experience</h2>
+        <div class="project-container">
+            <!-- Example Project Box -->
+            <div class="project-box">
+                <img src="Past_Project/IR4.0.jpg" alt="Project 1">
+                <div class="project-layer">
+                    <h4>Production Line Repair Work </h4>
+                    <p>This is a student project that involves repairing and upgrading the line with new technology.</p>
+                    <div class="btn-container">
+                        <a href="https://youtu.be/6n-30UCGYv8?si=V0dmfJcSpCnzj9sf" target="_blank">
+                            <i class='bx bx-movie-play'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img src="Past_Project/logic_probe.png" alt="">
+                <div class="project-layer">
+                    <h4>BCD to 7Segmen Decoder</h4>
+                    <p>This project is part of the Technology Skill & Development in Electronic Automation II course, where the goal is 
+                        to design an electronic circuit using various logic gates and fabricate it onto a stripboard.</p>
+                    <div class="btn-container">
+                        <a href="Past_Project/Project_Report_(Skill2).pdf" target="_blank">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img src="Past_Project/population.png" alt="">
+                <div class="project-layer">
+                    <h4>Malaysian Population Dashboard</h4>
+                    <p>The project focuses on learning Python programming basics and utilizing the Streamlit framework to build interactive web applications, providing hands-on experience in web development.</p>
+                    <div class="btn-container">
+                        <a href="Past_Project/Group_3_Project_Documentation(tsp2).pdf" target="_blank">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                        <a href="https://github.com/Symsl23/MY-Population-Dashboard.git" target="_blank">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img src="Past_Project/FMSii.jpg" alt="">
+                <div class="project-layer">
+                    <h4>Proton X70'S Headlamp Assembly</h4>
+                    <p>The project focuses on operating and programming a collaborative robot (Cobot) within a production line, with an emphasis on flexibility for different workpiece configurations. It integrates sensors and actuators to enhance the system's efficiency.</p>
+                    <div class="btn-container">
+                        <a href="Past_Project/VC23047_VC23051_VC23052_VC23053_ComReport.pdf" target="_blank">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                        <a href="https://youtu.be/reCyfaCLyqs" target="_blank">
+                            <i class='bx bx-movie-play'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img src="Past_Project/DAQ2.jpg" alt="">
+                <div class="project-layer">
+                    <h4>Smart Plant Monitoring System Using PLX-DAQ</h4>
+                    <p>The project teaches data acquisition principles through sensor data collection using PLX-DAQ software, contrasting with a similar project that uses C programming and serial communication for data collection. </p>
+                        <div class="btn-container">
+                            <a href="Past_Project/Smart_Plant_Monitoring_System_Using_PLX_DAQ.pdf" target="_blank">
+                            <i class='bx bx-link-external' ></i></a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img src="Past_Project/Eplan.png" alt="">
+                <div class="project-layer">
+                    <h4>Changing Conventional Relay to PLC</h4>
+                    <p>The project focuses on transitioning from a relay-based control system to a PLC-controlled system with an induction motor, while also developing the electrical schematic and 
+                        control panel designs.</p>
+                        <div class="btn-container">
+                            <a href="Past_Project/VC23053_VC23054_Technical_and_Commercial_Proposal.pdf" target="_blank">
+                            <i class='bx bx-link-external' ></i></a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img src="Past_Project/project-fms1.png" alt="">
+                <div class="project-layer">
+                    <h4>Pick & Place and Assembly System</h4>
+                    <p>The project focuses on designing a real-world manufacturing process using Ladder Programming and GUI development to control and monitor the system.
+                    <div class="btn-container">
+                        <a href="Past_Project/VC23047_VC23053_VC24007_ProjectReport.pdf" target="_blank">
+                        <i class='bx bx-link-external'></i>
+                    </a>
+                    <a href="https://youtu.be/fPoc4D8JJm0" target="_blank">
+                        <i class='bx bx-movie-play'></i>
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img src="Past_Project/cissco.png" alt="">
+                <div class="project-layer">
+                    <h4>Network System by Cisco Packet Tracer</h4>
+                    <p>The project focuses on practical skills for setting up and configuring a local network, utilizing switches and routers for network communication and management.</p>
+                    <div class="btn-container">
+                        <a href="Past_Project/VC23047_VC23053_Assignment_Report.pdf" target="_blank">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                        <a href="https://youtu.be/UwPxqqppkNM?si=73q3BoOJsMXX3A9E" target="_blank">
+                            <i class='bx bx-movie-play'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+        <!-- Achievements -->
+        <section class="achievements animated-section fade-in-up" id="achievements">
+            <h2>Achievements/Awards Received</h2>
+            <div class="achievements-container">
+            <div class="achievements-box">
+            <h3>Introduction to Omron COBOT Training</h3>
+            <p>I participated in a short course on Omron Collaborative Robot Training, where I learned how to program the robot for picking and placing workpieces into the jig.</p>
+            <a href="javascript:void(0);" class="btn" onclick="openCertPopup('Certificate/Cobot.pdf')">View Cert</a>
+            </div>
+
+            <div class="achievements-box">
+            <h3>Single Phase Electrical Wiring Installation</h3>
+            <p>I attended a short course on single-phase electrical wiring, where I learned the theory, safety protocols, and practical installation techniques.</p>
+            <a href="javascript:void(0);" class="btn" onclick="openCertPopup('Certificate/Single_Phase.pdf')">View Cert</a>
+            </div>
+
+            <div class="achievements-box">
+            <h3>Dean's Award Sem 2</h3>
+            <p>I received a Dean’s Award for my second semester from the Faculty.</p>
+            <a href="javascript:void(0);" class="btn" onclick="openCertPopup('Certificate/Dean List.pdf')">View Cert</a>
+            </div>
+        </div>
+        </section>
+
+        <!-- Popup Container -->
+        <div class="popup-container" id="popup">
+        <div class="popup">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <iframe id="popup-pdf" style="width: 100%; height: 500px;"></iframe>
+        </div>
+        </div>
+
+        <script>
+        function openCertPopup(pdfUrl) {
+            document.getElementById('popup-pdf').src = pdfUrl;
+            document.getElementById('popup').style.display = 'flex';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('popup-pdf').src = '';
+        }
+        </script>
+
+    <!-- Contact Section -->
+    <section class="contact fade-in-up" id="contact">
+        <div class="contact-info">
+            <h2>Contact Me</h2>
+            <p>📧 amiruladly167@gmail.com</p>
+            <p>📞 013-466 2146</p>
+            <div>
+                <!-- Social Media Links with Icons -->
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="https://www.instagram.com/abecey.dly/" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.linkedin.com/feed/?trk=onboarding-landing" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+            
+            <!-- Download CV Button -->
+            <a href="Image/Resume.pdf" class="cv-button" target="_blank">
+                <i class="fas fa-download"></i> Download CV
+            </a>
+
+        </div>
+        <div class="contact-form">
+            <form action="https://formspree.io/f/xqapyobj" method="POST">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="_replyto" placeholder="Your Email" required>
+              <textarea name="message" placeholder="Your Message" required></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+    </section>
+    <script>
+        document.querySelector("form").addEventListener("submit", function(e) {
+          e.preventDefault();
+          const form = this;
+      
+          fetch(form.action, {
+            method: form.method,
+            body: new FormData(form),
+            headers: {
+              'Accept': 'application/json'
+            }
+          }).then(response => {
+            if (response.ok) {
+              alert("🎉 Message sent successfully!");
+              form.reset();
+            } else {
+              alert("⚠️ Oops! Something went wrong.");
+            }
+          }).catch(error => {
+            alert("⚠️ Network error. Please try again.");
+          });
+        });
+      </script>
+
+    <!-- Footer -->
+    <footer class="footer container">
+        <p>&#169; 2025 Amirul Adly.All Right Reserved </p>
+        <a href="#home" class="back-to-top">To Top ↑</a>
+    </footer>
+
+    <script>
+        const toTopBtn = document.querySelector('.back-to-top');
+    
+        window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            toTopBtn.style.display = 'block';
+            toTopBtn.classList.add('show');
+        } else {
+            toTopBtn.style.display = 'none';
+            toTopBtn.classList.remove('show');
+        }
+        });
+    </script>
+
+     <!-- Animation -->
+     <script>
+        const observers = document.querySelectorAll('.fade-in-up');
+      
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+            }
+          });
+        }, {
+          threshold: 0.1
+        });
+      
+        observers.forEach(el => observer.observe(el));
+      </script>
+      
+</body>
+</html>

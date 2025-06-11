@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300:400:500:600:700:800:900&display=swap');
+
+:root {
+    --main-color: #476EE2;
+    --second-color: #FF6B08;
+    --hover-color:  #FF6B08;
+    --bg-color: #000000;
+    --section-bg: #111;
+    --text-color: #ffffff;
+    --muted-text: #bbb;
+    --highlight-text: #ecc190;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a263d;
+    color: var(--text-color);
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 80px;
+    background:#FF6B08;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 11px;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Highlight active link */
+  nav ul li a.active {
+    color: var(--main-color);
+    font-weight: bold;
+  }
+
+/* Section Styling */
+section {
+    padding: 80px;
+    text-align: center;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh;
+    padding: 100px;
+    text-align: justify;
+    background-color: #0d1b2b;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    text-align: justify;
+}
+
+.hero-text h1 span {
+    color: #FF6B08;
+}
+
+.hero-image img {
+    width: 400px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    background-color: #1a263d;
+}
+.about img {
+    width: 350px;
+    border-radius: 10px;
+    margin-right: 60px;
+}
+.about-text {
+    flex: 1;
+    font-size: 20px;
+    text-align: justify;
+}
+.dropdown-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 30px;
+}
+.dropdown {
+    background-color: #0d1b2b;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+    font-size: 20px;
+}
+.dropdown-content {
+    display: none;
+    padding: 15px;
+    background-color: #FF6B08;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #1a263d;
+    padding: 80px 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    background: #5f5f5f;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-form button {
+    background-color: #FF6B08;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 105%;
+}
+.cv-button {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.cv-button i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.cv-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/*Skill*/
+.services {
+    padding: 60px 40px;
+    background-color: #0d1b2b;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: rgb(253, 250, 250); /* Optional: Set header color */
+    text-align: center;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.skills-box {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #FF6B08, #111);
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #444;
+    transition: 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    max-width: 250px; /* Adjusted the card width */
+    min-width: 220px; /* Ensure a minimum width */
+    margin: 10px 0;
+    text-align: left;
+    cursor: pointer;
+}
+
+.skills-box:hover {
+    border-color: red;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(250, 252, 173, 0.8); /* Enhanced hover effect */
+}
+
+.skills-info {
+    flex: 1;
+    padding-left: 15px;
+}
+
+.skills-box img {
+    width: 70px; /* Adjusted the image size */
+    height: 70px; /* Adjusted the image size */
+    border-radius: 8px;
+}
+
+.skills-info h3 {
+    font-size: 1.1rem; /* Adjusted the font size */
+    color: #ecc190;
+    margin: 10px 0;
+}
+
+.skills-info p {
+    font-size: 0.9rem; /* Adjusted the paragraph font size */
+    color: #bbb;
+    margin: 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .skills-box {
+        max-width: 200px; /* Further reduce size on smaller screens */
+        padding: 15px;
+    }
+
+    .skills-box img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .skills-info h3 {
+        font-size: 1rem; /* Adjusted font size */
+    }
+
+    .skills-info p {
+        font-size: 0.8rem; /* Adjusted font size */
+    }
+}
+
+/* Project Section */
+.project {
+    background-color: #1a263d;
+    padding: 6rem 4rem;
+    width: 100%;
+}
+.project h2 {
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #1a263d;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-box {
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 1remrgba(252, 61, 61, 0.5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 7/5;
+}
+
+.project-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+.project-box:hover img {
+    transform: scale(1.1);
+}
+
+.project-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#FF6B08, rgba(216, 154, 154, 0.4));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: rgb(0, 0, 0);
+    transform: translateY(100%);
+    transition: 0.5s ease;
+}
+
+.project-box:hover .project-layer {
+    transform: translateY(0);
+}
+
+.project-layer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-layer p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn-container a {
+    width: 3rem;
+    height: 3rem;
+    background:  #69dae9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.btn-container a:hover {
+    background: #007f7f;
+}
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Make the background dim */
+    display: none; /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-container.popup-open {
+    display: flex; /* Show the popup when the class is added */
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.popup {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transform: scale(0.8);
+    transition: transform 0.3s ease-in-out;
+}
+
+.popup iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: red;
+    background: white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project h2 {
+        font-size: 1.5rem;
+    }
+}  
+
+
+.achievements {
+margin: 4rem 0rem 0rem;
+background-color: #0d1b2b;
+}
+
+.achievements h2 {
+text-align: center;
+margin-bottom: 4rem;
+font-size: 2.5rem;
+}
+
+.achievements h2 span {
+color: var(--main-color);
+}
+
+.achievements-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 2.5rem;
+}
+
+.achievements-box {
+background: var(--second-color);
+padding: 3rem 2rem 4rem;
+border-radius: 2rem;
+text-align: center;
+border: .2rem solid var(--bg-color);
+transition: .5s ease;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+max-height: 400px;
+opacity: 0;
+transform: translateY(50px);
+animation: fadeUp 1s forwards;
+}
+
+.achievements-box:nth-child(1) {
+animation-delay: 0.2s;
+}
+
+.achievements-box:nth-child(2) {
+animation-delay: 0.4s;
+}
+
+.achievements-box:nth-child(3) {
+animation-delay: 0.6s;
+}
+
+@keyframes fadeUp {
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.achievements-box:hover {
+border-color: var(--main-color);
+transform: scale(1.02);
+}
+
+.achievements-box h3 {
+font-size: 2rem;
+}
+
+.achievements-box p {
+font-size: 1.2rem;
+margin: 1rem 0 2rem;
+flex-grow: 1;
+}
+
+.achievements-box .btn {
+display: inline-block;
+font-size: 1.4rem;
+padding: 0.8rem 2rem;
+border-radius: 2rem;
+background: var(--main-color);
+color: var(#ffffff);
+text-decoration: none;
+transition: 0.3s;
+max-width: 130px;
+margin: auto;
+animation: bounceHover 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes bounceHover {
+from { transform: translateY(0); }
+to { transform: translateY(-4px); }
+}
+
+.btn:hover {
+background: var(--text-color);
+color: var(--main-color);
+}
+
+.popup {
+background: var(--bg-color);
+padding: 20px;
+border-radius: 10px;
+width: 90%;
+max-width: 600px;
+position: relative;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+transform: scale(0.8);
+animation: zoomIn 0.3s ease forwards;
+}
+
+@keyframes zoomIn {
+to {
+transform: scale(1);
+}
+}
+
+@keyframes fadeIn {
+to {
+opacity: 1;
+}
+}
+
+.popup iframe {
+width: 100%;
+height: 500px;
+border: none;
+}
+
+.close-btn {
+position: absolute;
+top: -15px;
+right: -15px;
+font-size: 24px;
+cursor: pointer;
+color: var(--main-color);
+background: var(--bg-color);
+width: 35px;
+height: 35px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+font-weight: bold;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--second-color);
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 999;
+}
+
+.back-to-top {
+    display: none; /* Initially hidden */
+}
+
+.back-to-top:hover {
+    background-color: var(--hover-color);
+    transform: translateX(-50%) scale(1.05);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+  }
+  
+  .fade-in-up.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    margin: 10px;
+    display: inline-block;
+}
+
+a:hover {
+    color: #007bff; /* Color on hover */
+}
+
+a i {
+    margin-right: 8px; /* Space between icon and text */
+}
+.animated-portfolio-title {
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #23395B, #3E5C76, #5C7C99);
+    background-size: 200% auto;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: gradientMove 4s ease infinite, fadeInUp 1s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+
+  
+  
+    
+  
