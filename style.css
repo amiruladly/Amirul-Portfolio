@@ -322,12 +322,14 @@ h2 {
     background: linear-gradient(#FF6B08, rgba(216, 154, 154, 0.4));
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
+    justify-content: center; /* Vertical centering */
+    align-items: center;     /* Horizontal centering */
+    padding: 2rem;           /* Balanced padding */
     color: rgb(0, 0, 0);
+    text-align: center;      /* Crucial for multi-line text alignment */
     transform: translateY(100%);
     transition: 0.5s ease;
+    box-sizing: border-box;  /* Ensures padding doesn't push the layer out of bounds */
 }
 
 .project-box:hover .project-layer {
@@ -335,13 +337,14 @@ h2 {
 }
 
 .project-layer h4 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 .project-layer p {
-    font-size: 1.1rem;
+    font-size: 0.7rem;
     margin-bottom: 1rem;
+    text-align:justify;
 }
 
 .btn-container {
@@ -351,18 +354,29 @@ h2 {
 }
 
 .btn-container a {
-    width: 3rem;
+width: 3rem;
     height: 3rem;
-    background:  #69dae9;
+    background: #69dae9;
     border-radius: 50%;
+    
+    /* Centering logic */
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    /* ADD THESE TWO LINES */
+    line-height: 0; 
+    text-decoration: none; 
+
     transition: 0.3s ease;
 }
 
-.btn-container a:hover {
-    background: #007f7f;
+/* Target the icon directly to remove any margin */
+.btn-container a i {
+    font-size: 1.5rem; /* Adjust size as needed */
+    margin: 0;
+    padding: 0;
+    display: block; /* Removes baseline alignment issues */
 }
 
 .popup-container {
@@ -458,7 +472,7 @@ border: .2rem solid var(--bg-color);
 transition: .5s ease;
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+justify-content: center;
 max-height: 400px;
 opacity: 0;
 transform: translateY(50px);
